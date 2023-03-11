@@ -1,0 +1,29 @@
+<div class="container tex-center mt-5">
+  <form class="p-4 bg-light" (submit)="login()">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">UserName</label>
+      <input
+        [(ngModel)]="username"
+        placeholder="Enter The Name"
+        type="email"
+        class="form-control"
+        name="username"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input
+        [(ngModel)]="pasword"
+        type="password"
+        name="pasword"
+        class="form-control"
+        id="exampleInputPassword1"
+        placeholder="Enter The Password"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+</div>

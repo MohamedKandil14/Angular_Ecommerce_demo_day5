@@ -1,0 +1,26 @@
+<div class="bg-dark mt-5 p-4 text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <img [src]="product?.imgurl" alt="" />
+      </div>
+      <div class="col-sm-6 text-light">
+        <h3 class="text-success">ProductName: {{ product?.productName }}</h3>
+        <p class="fw-bolder fs-4">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
+          earum facilis ipsa optio dolorum nulla nemo iusde,
+        </p>
+        <p>price: {{ product?.price | currency }}</p>
+        <p>Quantity:{{ product?.quantity }}</p>
+        <div>
+          <i class="bi bi-star-fill fs-2 text-success"></i>
+          <i class="bi bi-star-fill fs-2 text-success mx-1"></i>
+          <i class="bi bi-star-fill fs-2 text-success mx-1"></i>
+          <i class="bi bi-star-fill fs-2 text-success mx-1"></i>
+          <i class="bi bi-star-fill fs-2 text-success mx-1"></i>
+        </div>
+        <button class="btn btn-success mt-3" [routerLink]="['/products']" >Back To Products</button>
+      </div>
+    </div>
+  </div>
+</div>
